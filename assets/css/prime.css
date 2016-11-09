@@ -1,0 +1,22 @@
+body{
+	height: 100%;
+	width: 100%;
+	background-color: #1F4E79;
+	overflow-x: hidden;
+}
+
+h1, h3, p {
+    color: #ed7d31;
+    
+}
+
+.c-header-bar {
+    height: auto;
+    border-style: solid;
+    border-bottom: thick solid #ed7d31;
+}
+
+.c-header-text-container{
+   position: absolute;
+   left: 5%;   
+}

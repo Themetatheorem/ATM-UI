@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Withdraw Money</title>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Custom Css -->
+<link rel="stylesheet" href="../assets/css/login.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/animate.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/prime.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/numpad.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// <--></-->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!-- Static navbar -->
+    <div class="navbar navbar-static-top c-header-bar">
+      <div class="c-header-text-container">
+          <h1> Affordance Bank</h1>
+          <h3> Banking on Affordances</h3>
+      </div>
+    </div>
+
+
+	<div class="form animated slideInDown"> 
+	<div id="account-number-form">
+		<span class="form-title" id="account_number_title"><b>Enter Amount to Withdraw:</b></span>
+		<input type="text" name="account_number" id="account_number_field" placeholder="Enter account number using keypad below" maxlength="16" onkeydown="return false;">
+		<!-- <span id="account_number_help"></span> -->
+	</div>
+	<br /><br />
+	</div>
+	<div class="numpad">
+		<ul id="keyboard">   
+	        <li class="letter" id="numpad_1" onClick=numpadClick(this.id)>1</li>  
+	        <li class="letter" id="numpad_2" onClick=numpadClick(this.id)>2</li>  
+	        <li class="letter" id="numpad_3" onClick=numpadClick(this.id)>3</li>  
+	        <li class="letter clearl" id="numpad_4" onClick=numpadClick(this.id)>4</li>  
+	        <li class="letter" id="numpad_5" onClick=numpadClick(this.id)>5</li>  
+	        <li class="letter" id="numpad_6" onClick=numpadClick(this.id)>6</li> 
+	      
+	        <li class="letter clearl" id="numpad_7" onClick=numpadClick(this.id)>7</li>  
+	        <li class="letter" id="numpad_8" onClick=numpadClick(this.id)>8</li>  
+	        <li class="letter" id="numpad_9" onClick=numpadClick(this.id)>9</li>       
+	        <li class="switch" id="numpad_delete" onClick=numpadClick(this.id)>Delete</li>
+	        <li class="letter" id="numpad_0" onClick=numpadClick(this.id)>0</li> 
+	        <li class="return" id="numpad_enter" onClick=numpadClick(this.id)>Enter</li>
+	    </ul>
+    </div>  
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+<script type="text/javascript" src="../assets/js/validator.js"></script>
+
+  </body>
+</html>

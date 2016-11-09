@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title> Choose Option </title>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Custom Css -->
+<link rel="stylesheet" href="../assets/css/index.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/prime.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/dash.css">
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-static-top c-header-bar">
+        <header>
+            <div id="header-left">
+            <h1>Card Holder</h1>
+            <h2>Anagh Goswami</h2>
+            <h1>Account Number</h1>
+            <h2><div id="accountnum"></div></h2>
+            </div>
+            <div id="header-right">
+            <h1>Chequing Account Balance </h1>
+            <h2><div id="chequingsBalance">-</div></h2>
+            <h1>Savings Account Balance</h1>
+            <h2><div id="savingsBalance">-</div></h2>
+            </div>
+        </header>
+    </nav>
+
+
+  <div id="button-container">
+    <div id="buttons">
+      <h2><div id="error-msg-dash"></div></h2>
+      <div id="buttons-top">
+        <a href="withdraw.html" class="dash-btn">Withdraw</a>
+        <a href="accounts-deposit.html" class="dash-btn">Deposit</a>
+        <a href="transfer-funds.html" class="dash-btn">Transfer Funds</a>
+      </div>
+      <div id="buttons-bottom">
+        <a href="#" onclick="fastCash(60,'chequing')" class="dash-btn">Fast Cash: $60</a>
+        <a href="settings.html" class="dash-btn">Change Pin</a>
+        <a href="index.html" onclick="logout()" class="dash-btn">Log Out</a>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="../assets/js/dash.js"></script>
+  </body>
+</html>
